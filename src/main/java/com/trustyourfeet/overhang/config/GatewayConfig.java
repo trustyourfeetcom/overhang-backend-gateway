@@ -1,4 +1,4 @@
-package com.overhang.backend.config;
+package com.trustyourfeet.overhang.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -11,8 +11,9 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("auth_route", r -> r.path("/auth/**")
-                        .uri("lb://overhang-backend-auth"))
-                .build();
+            .route("auth_route", r -> r
+                .path("/auth/**")
+                .uri("lb://overhang-backend-auth"))
+            .build();
     }
 }
