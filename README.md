@@ -63,7 +63,7 @@
 
 ## Resources
 
-* [Confluence Page](https://overhang.atlassian.net/wiki/spaces/Documentat/pages/6389788/overhang-backend-gateway)
+* [Confluence Page](https://overhang.atlassian.net/wiki/x/HIBh)
 
 
 <!-- CONTACT -->
