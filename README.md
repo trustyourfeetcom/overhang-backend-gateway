@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/trustyourfeetcom/overhang-backend-auth">
+  <a href="https://github.com/trustyourfeetcom/overhang-backend-gateway">
     <img src="https://github.com/trustyourfeetcom/overhang-branding-assets/blob/main/logos/logo.png?raw=true" alt="Serenaid Logo" width="120" height="120">
   </a>
 
