@@ -11,9 +11,14 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-            .route("auth_route", r -> r
-                .path("/auth/**")
-                .uri("lb://overhang-backend-auth"))
-            .build();
+                .route("auth_route", r -> r
+                        .path("/api/auth/**")
+                        .filters(f -> f
+                                .stripPrefix(1)
+                                .circuitBreaker(config -> config
+                                        .setName("authServiceCircuitBreaker")
+                                        .setFallbackUri("forward:/authFallback")))
+                        .uri("lb://overhang-backend-auth"))
+                .build();
     }
 }
