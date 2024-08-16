@@ -18,7 +18,7 @@ public class GatewayConfig {
                                 .circuitBreaker(config -> config
                                         .setName("authServiceCircuitBreaker")
                                         .setFallbackUri("forward:/authFallback")))
-                        .uri("lb://overhang-backend-auth"))
+                        .uri(System.getenv("AUTH_SERVICE_URL")))
                 .build();
     }
 }
