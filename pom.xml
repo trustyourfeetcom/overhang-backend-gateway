@@ -99,13 +99,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
 		</dependency>
-
-		<!-- Spring Cloud Netflix Eureka Client -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
+		
 		<!-- Spring Dotenv -->
 		<dependency>
 			<groupId>me.paulschwarz</groupId>
