@@ -20,4 +20,14 @@ public class FallbackController {
                 null,
                 null);
     }
+
+    @GetMapping
+    @RequestMapping("/identityFallback")
+    public ResponseEntity<Object> identityFallback() {
+        return ResponseHandler.generateResponse(
+                HttpStatus.SERVICE_UNAVAILABLE,
+                "Identity Service is currently unavailable.",
+                null,
+                null);
+    }
 }
